@@ -2,6 +2,7 @@ import React from 'react';
 import TextField from '@mui/material/TextField';
 import Button from '@mui/material/Button';
 import Box from '@mui/material/Box';
+import MUISelect from '../MUISelect'; // MUISelect bileşenini doğru şekilde içe aktarın
 
 export function UserForm() {
   return (
@@ -39,10 +40,12 @@ export function UserForm() {
         variant="outlined"
       />
 
+      {/* MUISelect bileşenini buraya ekliyoruz */}
+      <MUISelect />
+
       <Button variant="contained" color="primary" type="submit">
         Gönder
       </Button>
     </Box>
   );
 }
-
